@@ -411,7 +411,7 @@ public final class PhantomBot implements Listener {
         this.dataStoreConfig = this.pbProperties.getProperty("datastoreconfig", "");
 
         /* Set the Twitter variables */
-        this.twitterUsername = this.pbProperties.getProperty("twitterUser", "");
+        this.twitterUsername = this.pbProperties.getProperty("twitterUser", "").toLowerCase();
         this.twitterConsumerToken = this.pbProperties.getProperty("twitter_consumer_key", "");
         this.twitterConsumerSecret = this.pbProperties.getProperty("twitter_consumer_secret", "");
         this.twitterAccessToken = this.pbProperties.getProperty("twitter_access_token", "");
